@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		 <title>Kathy Chapman - Portfolio</title>
+		 <meta content="width=device-width, initial-scale=1" name="viewport" />
+		 <meta name="description" content="">
+		 <meta name="author" content="">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+		 
+		 <script src="https://kit.fontawesome.com/cae54144ac.js" crossorigin="anonymous"></script>
+		 <link href="css/style.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Navigation bar -->
+		
+			<nav class="navbar" id="navbar">
+				<div class="navbar-logo">
+  					<a href="#navbar">Kathy Chapman</a>
+  				</div>
+  				<div class="navbar-links desktop">
+  					<a href="#about-main">About Me</a>
+  					<a href="#projects-main">Projects</a>
+  					<a href="#footer-content">Contact</a>
+  				</div>
+  				<div class="navbar-links mobile">
+  					<span id="menuHamburger" onclick="openMenu()">
+  						<i class="fas fa-bars"></i>
+					</span>
+  					<div class="nav-dropdown" id="nav-display">
+	  					<a href="#about-main">About Me</a>
+	  					<a href="#projects-main">Projects</a>
+	  					<a href="#footer-content">Contact</a>
+	  					<span id="menuX" onclick="closeMenu()">
+	  						<i class="far fa-window-close"></i>
+						</span>
+  					</div>
+  				</div>	
+			</nav>
+
+			<!-- Main heading -->
+		<header>
+			<div class="heading-overlay">	
+				<div class="heading-content">
+					<div class="heading-image">
+						<img src="css/images/ada-lovelace-day.jpg" alt="">
+						<h1>Hi, I'm Kathy</h1>
+					</div>
+					<div class="heading-text">
+						<p>Based in Derby, United Kingdom, working in SEO and aspiring web developer.</p>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Who Am I -->
+		<main>
+			<section id="about-main">
+				<div class="about-content">
+					<h2>Who Am I</h2>				
+					<div class="about-cards">
+						<div class="card" id="about-card-1">
+							<div class="card-body">
+								<h3 class="card-title">I Work In SEO</h3>
+			    				<p class="card-text">I work for the UK's best rated link building agency, I focus primarily on off-site SEO as my main responsibility is to outreach and build relationships. I look from any where between 400-600 different websites everyday <em>(that's a lot!)</em>. I have learnt alot about how sites rank and methods used to build better quality higher ranking pages. But then i got intrigued. How do I actually make a website?</p>
+			    			</div>
+						</div>
+						<div class="card" id="about-card-2">
+							<div class="card-body">
+								<h3 class="card-title">I Love To Code</h3>
+			    				<p class="card-text">From 2018 I started to dabble in learning how to code. it wasn't until 2020 <em>(thanks </em>lockdown)</em> rolled in that I really got my stuck into learning how to build and develop a website. I have absolutely loved and thanks to various courses, bootcamps and friends, I confident to continue my own learning and develop my own programming skills.</p>
+			    			</div>
+						</div>
+						<div class="card" id="about-card-3">
+							<div class="card-body">
+								<h3 class="card-title">My Spare Time</h3>
+			    				<p class="card-text">In my spare time, I also enjoy origami, working out and the odd Netflix documentary. I am also a proud cat mama, who just so happens to have the best desk buddy to keep me company as I code.
+			    					<img src="css/icons/cat.png" alt="" id="about-cat">
+			    				I plan to learn more programing languages and begin to experiment with other softwares and framesworks so the websites I develop can really POP!</p>
+			    			</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Projects -->
+			<section id="projects-main">
+				<div class= projects-content>
+					<h2>Projects</h2>
+					<div id="projects">
+						<div class="project" id="project-1">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject1()" id="showProjectHead1">Mixed Messages</h4>
+								<h4 onclick="hideProject1()" id="hideProjectHead1">Mixed Messages</h4>
+								<a href="" class="smallProjects">Mixed Messages <span>- click to see</span></a>
+							</div>
+							<p>My very first JavaScript project! Generates random cat messages.</p>
+							<a href="">
+								<div class="project-image desktop" id="projectImg1"></div>
+							</a>					
+						</div>							
+						<div class="project" id="project-2">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject2()" id="showProjectHead2">The Cosy Food Club</h4>
+								<h4 onclick="hideProject2()" id="hideProjectHead2">The Cosy Food Club</h4>
+								<a href="" class="smallProjects">The Cosy Food Club <span>- click to see</span></a>
+							</div>
+							<p>CSS project ultilising a mixture of flexbox and grid.</p>
+							<a href="">
+								<div class="project-image desktop" id="projectImg2"></div>
+							</a>						
+						</div>						
+						<div class="project" id="project-3">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject3()" id="showProjectHead3">Cosy Cats Adoption</h4>
+								<h4 onclick="hideProject3()" id="hideProjectHead3">Cosy Cats Adoption</h4>
+								<a href="" class="smallProjects">Cosy Cats Adoption <span>- click to see</span></a>
+							</div>
+							<p>CSS grid project that's also responsive to different screen sizes.</p>
+							<a href="">
+								<div class="project-image desktop" id="projectImg3"></div>
+							</a>				
+						</div>
+					</div>	
+				</div>		
+			</section>
+		<!-- Skills -->
+			<aside id="skills-section">
+				<div class="skills-content">
+					<div class="skills-inline">
+						<h3>Skills</h3>
+						<div class="skills">
+							<div class="skill">
+							<img src="css/icons/html.png" alt="">
+						</div>
+							<div class="skill">
+								<img src="css/icons/css.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/javascript.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/ruby.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/git.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/github.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/seo.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div id="footer-content">
+				<h2>Let's Chat</h2>
+				<h3>Want to get in touch? Please fill out the contact form below:</h3>
+				<form id="footer-form" method=""> 
+					<label for="contact-name">Name:</label>
+					<input type="text" placeholder="Name" required id="contact-name" name="contact-name">
+					<br>
+					<label for="contact-email">Email Address:</label>
+					<input type="text" placeholder="Email Address" required id="contact-email" name="contact-email">
+					<br>
+					<label for="contact-subject">Subject:</label>
+					<input type="text" placeholder="Subject" required id="contact-subject" name="contact-subject">
+					<br>
+					<label for="contact-message">Message:</label>
+					<textarea type="text" placeholder="Hello Kathy!" required id="contact-message" name="contact-message" form="contact-form"></textarea>
+					<br>
+					<input type="submit" value="Submit" id="contactBtn">	
+				</form>
+				<span>*Please fill in all the spaces</span>
+			</div>
+			<div class="footer-contact">
+				<a href="https://www.facebook.com/xkathyxchapman" target="_blank">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+				<a href="https://www.instagram.com/kathythecreator/" target="_blank">
+					<i class="fab fa-instagram-square"></i>	
+				</a>
+				<a href="https://github.com/K95Monty" target="_blank">
+					<i class="fab fa-github-square"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</div>
+			<div id="disclaimer">
+				<small>&copy; Copyright 
+					<span id="copyright">
+					<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+					</span>, Created with <i class="fas fa-heart"></i> <strong>Kathy Chapman</strong>
+				</small>
+			</div>
+		</footer>
+
+<script type="text/javascript" src="portfolio.js">	
+		
+	</script>
+	</body>
+
+	
+</html>

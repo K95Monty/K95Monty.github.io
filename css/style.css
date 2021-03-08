@@ -1,0 +1,46 @@
+@import url('../../../boiler-template.css');
+@import url('components/nav.css');
+@import url('components/scroll.css');
+@import url('components/header.css');
+@import url('components/about.css');
+@import url('components/projects.css');
+@import url('components/skills.css');
+@import url('components/footer.css');
+
+body, html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+p, a, li, ul, ol {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Archivo Black', sans-serif;
+}
+
+/*colors
+FF7300 - orange
+86A5AA - light blue
+8C756F - light gray
+EFEFF0 - cream/white
+1B181D - dark blue */
+
+/*display certain content on different devices */
+
+@media only screen and (min-width:800px) {
+	.mobile {
+		display: none;
+		visibility: hidden;
+		opacity: 0%;
+	}
+}
+
+@media only screen and (max-width:800px) {
+	.desktop {
+		display: none;
+		visibility: hidden;
+		opacity: 0%;
+	}
+}

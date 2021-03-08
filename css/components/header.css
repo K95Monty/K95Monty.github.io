@@ -1,0 +1,144 @@
+header {
+	height: 660px;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url('../images/katy-mackenzie.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-bottom: 3px solid #8C756F;
+	overflow: hidden;
+}
+
+.heading-overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(27, 24, 29, 0.9)
+}
+
+.heading-content {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+	padding-top: 60px;
+
+}
+
+.heading-image {
+	align-self: center;
+	text-align: center;
+	margin-top: 50px;
+	justify-self: space-around;
+}
+
+.heading-image img{
+	height: 300px;
+	width: 300px;
+	grid-column: 1 / span 1;
+	border-radius: 50%;
+	border: 7px double #FF7300;
+	box-shadow: 0 0 5px 0 rgba(140, 117, 111, 0.5),
+				0 0 15px -5px rgba(239, 239, 240, 0.7),
+				-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
+}
+
+.heading-image h1 {
+	font-size: 3rem;
+	padding: 30px;
+	font-weight: bold;
+	color: #FF7300;
+	text-shadow: 2px 2px 0 #1B181D,
+				 3px 2px 0 #86A5AA,
+				 5px 4px 5px #86A5AA,
+				 2px 2px 0 #EFEFF0;
+	letter-spacing: 2px;
+}
+
+.heading-text {
+	grid-column: 2 / span 1;
+	height: 180px;
+	font-weight: bold;
+	justify-self: start;
+	width: 60%;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	color: #EFEFF0;
+}
+
+.heading-text p {
+	padding: 20px;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width:1050px) {
+	.heading-text p {
+		font-size: 1.4rem;
+	}
+
+}
+
+@media only screen and (max-width:1000px) {
+	.heading-text p {
+		font-size: 1.3rem;
+		padding: 15px;
+	}
+	.heading-image img {
+		height: 280px;
+		width: 280px;
+	}
+}
+
+@media only screen and (min-width:1000) {
+	.heading-image {
+		justify-self: end;
+		float: right;
+	}
+	.heading-text {
+		justify-self: start;
+		float: left;
+	}
+}
+
+@media only screen and (max-width:900px) {
+	.heading-content {
+		display: block;
+		text-align: center;
+	}
+	.heading-image h1 {
+		font-size: 2rem;
+	}
+	.heading-text {
+		margin: 0 auto;
+		width: 70%;
+		height: auto;
+	}
+	.heading-text p {
+		font-size: 1.2rem;
+		padding: 10px;
+	}
+	.heading-image img {
+		height: 250px;
+		width: 250px;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	.heading-image h1 {
+		font-size: 1.8rem;
+	}
+	.heading-text p {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	.heading-image img {
+		height: 200px;
+		width: 200px;
+	}
+}

@@ -1,0 +1,134 @@
+#about-main {
+	background-color: #EFEFF0;
+}
+
+.about-content {
+	width: 80%;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+.about-content h2 {
+	font-size: 2rem;
+	padding: 100px 20px 40px 20px;
+	color: #1B181D;
+	text-shadow: 2px 2px 0 #EFEFF0,
+				 2px 2px 2px #8C756F,
+				 3px 3px 0px #1B181D;
+	letter-spacing: 2px;
+}
+
+.about-cards {
+	display: flex;
+	justify-content: center;
+	align-content: flex-end;
+}
+
+.card {
+	background-color: #FF7300;
+	margin: 0 20px;
+	padding: 20px;
+	min-height: 250px;
+	border-top-left-radius: 60px;
+	width: 30%;
+}
+
+.card-body {
+	height: 100%
+}
+.card-title {
+	padding: 15px 15px 0 15px;
+	font-size: 1.5rem;
+	color: #EFEFF0;
+	text-shadow: 1px 2px 1px #1B181D,
+				 2px 3px 0px #1B181D;
+}
+
+.card-text {
+	padding: 15px;
+	line-height: 1.5;
+	font-size: 1.2rem;
+	color: #1B181D;
+	opacity: 0.9;
+}
+
+#about-cat {
+	height: 30px;
+	display: inline;
+}
+
+@media only screen and (max-width:1000px) {
+	#about-main {
+		padding-bottom: 10px;
+	}
+	.about-cards {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+		}
+	.card {
+		border-top-left-radius: 0;
+		margin-bottom: 10px;
+		height: auto;
+		border-radius: 3px;
+		box-shadow: 2px 2px 0 rgba(140, 117, 111, 0.7),
+					0 0 10px 0 rgba(140, 117, 111, 0.5),
+					0 0 15px -5px rgba(140, 117, 111),
+					-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
+	}
+	.card-body {
+		height: auto
+	}
+}
+
+@media only screen and (max-width:1300px) {
+	.about-content {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width:1000px) {
+	.card {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width:800px) {
+	.about-content {
+		font-size: 1.2rem;
+	}
+	.about-content h2  {
+	padding: 50px 20px 20px 20px;
+	font-size: 1.5rem;
+	text-align: center;
+	}
+	.about-cards {
+		width: 80%;
+	}
+	
+	.card-title {
+		font-size: 1.2rem;
+		padding: 10px 10px 0 10px;
+	}
+	.card-body p {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	.about-content {
+		font-size: 1rem;
+	}
+	.about-content h2 {
+	font-size: 1.2rem;
+	}
+	.about-cards {
+		width: 90%;
+	}
+	.card-title {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.card-body p {
+		font-size: 0.9rem;
+	}
+}
