@@ -1,9 +1,29 @@
+.footer-background {
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	background: #171618;
+	background: -moz-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
+	background: -webkit-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
+	background: linear-gradient(135deg, #171618 0%, #312E33 66%, #39363C 100%);
+	z-index: -99;
+}
+
+.footer-overlay {
+	height: 400px;
+	width: 100%;
+	background-image: url('../images/bright-squares.png');
+	position: absolute;
+	opacity: 0.2;
+	z-index: -1;
+}
+
 footer {
-	background-color: #1B181D;
 	font-size: 1.5rem;
 	color: #8C756F;
 	line-height: 1.5;
-
+	height: 400px;
+	width: 100%;
 }
 
 footer h2 {
@@ -19,6 +39,7 @@ footer h2 {
 footer h3 {
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1px;
+	color: #EFEFF0;
 }
 
 #footer-content {
@@ -40,81 +61,6 @@ footer h3 {
 
 .footer-contact i:hover {
 	color: #FF7300;
-}
-
-form {
-	max-width: 600px;
-	padding: 10px 10px 10px 30px;
-}
-
-#footer-form label {
-	font-weight: bold;
-	letter-spacing: 1.5px;
-	display: block;
-}
-
-#contact-name, #contact-email, #contact-subject {
-	
-	padding: 5px;
-	font-size: 1.1rem;
-	margin: 5px 0;
-	border-radius: 2px;
-	letter-spacing: 1px;
-	border: 2px solid #86A5AA;
-	background-color: rgba(239, 239, 240, 0.7);
-	color: #1B181D;
-	transition: ease-in-out, width .35s ease-in-out;
-	width: 55%;
-}
-
-#contact-message {
-	font-family: 'Roboto', sans-serif;
-	padding: 5px;
-	font-size: 1.1rem;
-	height:120px;
-	width: 60%;
-	margin: 5px 0;
-	border-radius: 2px;
-	letter-spacing: 1px;
-	resize: vertical;
-	border: 2px solid #86A5AA;
-	background-color: rgba(239, 239, 240, 0.7);
-	color: #1B181D;
-	overflow: auto;
-	transition: ease-in-out, width .35s ease-in-out;
-}
-
-*:focus {outline:none !important}
-
-input[type="text"]:focus {
-	border: 2px solid #FF7300 !important;
-	background-color: #EFEFF0 !important;
-	color: #1B181D !important;
-	border-radius: 2px !important;
-    box-shadow: 0 0 5px 0 rgba(140, 117, 111, 0.5),
-		0 0 5px -5px rgba(239, 239, 240, 0.7),
-		-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
-}
-
-textarea:focus {
-	border: 2px solid #FF7300 !important;
-	background-color: #EFEFF0 !important;
-	color: #1B181D !important;
-	border-radius: 2px !important;
-    box-shadow: 0 0 5px 0 rgba(140, 117, 111, 0.5),
-		0 0 5px -5px rgba(239, 239, 240, 0.7),
-		-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
-}
-
-#contactBtn {
-	background-color: #FF7300;
-	padding: 8px 10px;
-	margin: 5px 0;
-	font-size: 1.2rem;
-	border-radius: 3px;
-	border: 2px solid #8C756F;
-	font-weight: bold;
-	letter-spacing: 1.5px;
 }
 
 #disclaimer {
