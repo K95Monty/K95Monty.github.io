@@ -1,20 +1,29 @@
-header {
+.heading-background {
+	position: absolute;
 	height: 660px;
 	width: 100%;
-	margin: 0 auto;
-	background-image: url('../images/katy-mackenzie.jpg');
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	border-bottom: 3px solid #8C756F;
-	overflow: hidden;
+	background: #171618;
+	background: -moz-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
+	background: -webkit-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
+	background: linear-gradient(135deg, #171618 0%, #312E33 66%, #39363C 100%);
+	z-index: -99;
 }
 
 .heading-overlay {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(27, 24, 29, 0.9)
+	background-image: url('../images/bright-squares.png');
+	position: absolute;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+header {
+	height: 660px;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 3px solid #8C756F;
+	overflow: hidden;
 }
 
 .heading-content {
@@ -43,6 +52,8 @@ header {
 	box-shadow: 0 0 5px 0 rgba(140, 117, 111, 0.5),
 				0 0 15px -5px rgba(239, 239, 240, 0.7),
 				-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
+	object-fit: cover;
+	object-position: 0 20%;
 }
 
 .heading-image h1 {
