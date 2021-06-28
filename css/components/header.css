@@ -27,13 +27,13 @@ header {
 }
 
 .heading-content {
+	width: 60%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
+	justify-items: space-around;
 	align-items: center;
 	padding-top: 60px;
-
 }
 
 .heading-image {
@@ -58,7 +58,7 @@ header {
 
 .heading-image h1 {
 	font-size: 3rem;
-	padding: 30px;
+	padding-top: 30px;
 	font-weight: bold;
 	color: #FF7300;
 	text-shadow: 2px 2px 0 #1B181D,
@@ -73,7 +73,7 @@ header {
 	height: 180px;
 	font-weight: bold;
 	justify-self: start;
-	width: 60%;
+	width: 80%;
 	line-height: 1.6;
 	letter-spacing: 1px;
 	color: #EFEFF0;
@@ -81,8 +81,8 @@ header {
 
 .heading-text p {
 	padding: 20px;
-	font-size: 1.5rem;
-	letter-spacing: 1px;
+	font-size: 1.8rem;
+	letter-spacing: 1.5px;
 }
 
 
@@ -115,7 +115,7 @@ header {
 	}
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1500px) {
 	.heading-content {
 		display: block;
 		text-align: center;
@@ -129,7 +129,6 @@ header {
 		height: auto;
 	}
 	.heading-text p {
-		font-size: 1.2rem;
 		padding: 10px;
 	}
 	.heading-image img {
@@ -141,9 +140,6 @@ header {
 @media only screen and (max-width:600px) {
 	.heading-image h1 {
 		font-size: 1.8rem;
-	}
-	.heading-text p {
-		font-size: 1rem;
 	}
 }
 

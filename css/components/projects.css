@@ -53,13 +53,17 @@
 	color: rgb(27, 24, 29);
 }
 
-.smallProjects span {
-	font-family: 'Roboto', sans-serif;
+.small-projects-link a {
+	font-family: 'Archivo Black', sans-serif;
 	color: #FF7300;
-	font-weight: bold;
 }
 
-#hideProjectHead1, #hideProjectHead2, #hideProjectHead3  {
+.small-projects-link a:hover {
+	color: black;
+	transition: 0.5s ease all;
+}
+
+#hideProjectHead1, #hideProjectHead2, #hideProjectHead3, #hideProjectHead4, #hideProjectHead5  {
 	display: none;
 }
 
@@ -74,6 +78,25 @@
 
 .project p {
 	padding: 20px 10px;
+	height: 100px;
+}
+
+.project-link {
+	font-family: 'Archivo Black', sans-serif;
+	display: none;
+	text-align: left;
+	font-size: 1.5em;
+	padding-top: 3px;
+}
+
+.project-link a {
+	color: #FF7300;
+	font-weight: bold;
+}
+
+.project-link a:hover {
+	color: black;
+	transition: 0.5s ease all;
 }
 
 .project-image {
@@ -112,19 +135,41 @@
 	background-size: cover;
 }
 
+#projectImg4 {
+	background-image: url("../images/rise-safari.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#projectImg5 {
+	background-image: url("../images/hungry-secrets.png");
+	background-position: center;
+	background-size: cover;
+}
+
 @media only screen and (max-width:1000px) {
 	#projects-main {
 		border-top: none;
 	}
 }
 
-@media only screen and (max-width:900px) {
-#projects {
+@media only screen and (max-width:1350px) {
+	#projects {
 		display: block;
 	}
 	.project {
 		display: block;
 	}
+	.project h4 {
+		display: none;
+	}
+	.projects p {
+		height: auto;
+	}
+	.smallProjects {
+		display: inline-block;
+		font-size: 1.2rem;
+	}	
 }
 
 @media only screen and (max-width:800px) {
@@ -135,13 +180,6 @@
 		padding: 50px 20px 0 20px;
 		font-size: 1.5rem;
 		text-align: center;
-	}
-	.smallProjects {
-		display: inline-block;
-		font-size: 1.2rem;
-	}	
-	.project h4 {
-		display: none;
 	}
 	.project p {
 		font-size: 1.1rem;

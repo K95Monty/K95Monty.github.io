@@ -13,26 +13,34 @@ nav {
 }
 
 .navbar-links a {
-	color: #EFEFF0;
+	color: rgba(239, 239, 240, 0.7) !important;
 	padding: 15px 15px 3px 15px;
 	font-size: 1.2rem;
 	transition: border-bottom 0.5s ease;
 	letter-spacing: 2px;
+	text-shadow: #1B181D 1px 1px 0;
 }
 
 .navbar-links a:hover {
 	border-bottom: 4px solid #1B181D;
+	color: #EFEFF0 !important;
 }
 
 .navbar-logo a {
 	font-family: 'Archivo Black', sans-serif;
-	color: #EFEFF0 !important;
+	color: rgba(239, 239, 240, 0.7) !important;
 	text-decoration: none;
 	float: left;
 	padding: 15px 30px;
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	letter-spacing: 4px;
+	transition: border-bottom 0.5s ease;
+	text-shadow: #1B181D 1px 1px 0;
+}
+
+.navbar-logo a:hover {
+	color: #EFEFF0 !important;
 }
 
 .navbar-links {
@@ -63,7 +71,7 @@ nav {
 	color: #FF7300;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:877px) {
 	#nav-display {
 		display: none;
 	}	

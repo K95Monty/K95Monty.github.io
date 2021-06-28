@@ -1,6 +1,6 @@
 .footer-background {
 	position: absolute;
-	height: 400px;
+	height: 450px;
 	width: 100%;
 	background: #171618;
 	background: -moz-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
@@ -10,7 +10,7 @@
 }
 
 .footer-overlay {
-	height: 400px;
+	height: 450px;
 	width: 100%;
 	background-image: url('../images/bright-squares.png');
 	position: absolute;
@@ -45,10 +45,12 @@ footer h3 {
 #footer-content {
 	text-align: left;
 	padding: 30px;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .footer-contact {
-	padding-left: 30px;
+	padding-top: 30px;
 }
 
 .footer-contact i {

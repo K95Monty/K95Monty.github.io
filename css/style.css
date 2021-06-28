@@ -27,9 +27,10 @@ FF7300 - orange
 EFEFF0 - cream/white
 1B181D - dark blue */
 
+
 /*display certain content on different devices */
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:877px) {
 	.mobile {
 		display: none;
 		visibility: hidden;
@@ -37,7 +38,7 @@ EFEFF0 - cream/white
 	}
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:877px) {
 	.desktop {
 		display: none;
 		visibility: hidden;
