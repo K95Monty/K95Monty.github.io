@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		 <title>Kathy Chapman - Portfolio</title>
+		 <meta content="width=device-width, initial-scale=1" name="viewport" />
+		 <meta name="description" content="">
+		 <meta name="author" content="">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+		 
+		 <script src="https://kit.fontawesome.com/cae54144ac.js" crossorigin="anonymous"></script>
+		 <link href="css/style.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Navigation bar -->
+		
+			<nav class="navbar" id="navbar">
+				<div class="navbar-logo">
+  					<a href="#navbar">Kathy Chapman</a>
+  				</div>
+  				<div class="navbar-links desktop">
+  					<a href="#about-main">About Me</a>
+  					<a href="#projects-main">Projects</a>
+  					<a href="#skills-section">Skills</a>
+  					<a href="#footer-content">Contact</a>
+  				</div>
+  				<div class="navbar-links mobile">
+  					<span id="menuHamburger" onclick="openMenu()">
+  						<i class="fas fa-bars"></i>
+					</span>
+  					<div class="nav-dropdown" id="nav-display">
+	  					<a href="#about-main">About Me</a>
+	  					<a href="#projects-main">Projects</a>
+	  					<a href="#skills-section">Skills</a>
+	  					<a href="#footer-content">Contact</a>
+	  					<span id="menuX" onclick="closeMenu()">
+	  						<i class="far fa-window-close"></i>
+						</span>
+  					</div>
+  				</div>	
+			</nav>
+
+			<!-- Main heading -->
+		<div class="heading-background">
+		</div>
+		<div class="heading-overlay">
+		</div>
+		<header>
+			<div class="heading-content">
+				<div class="heading-image">
+					<img src="css/images/kathy.jpg" alt="profile picture">
+					<h1>Hello World.</h1>
+				</div>
+				<div class="heading-text">
+					<p>I'm Kathy Chapman, working in SEO and a aspiring web developer.</p>
+				</div>
+			</div>
+		</header>
+		
+		<!--Who Am I -->
+		<main>
+			<section id="about-main">
+				<div class="about-content">
+					<h2>Who Am I</h2>				
+					<div class="about-cards">
+						<div class="card" id="about-card-1">
+							<div class="card-body">
+								<h3 class="card-title">I Work In SEO</h3>
+			    				<p class="card-text">I work for the UK's top rated link building agency based in Derby United Kingdom, focusing primarily on off-site SEO. My main responsibility is to outreach and build relationships with editors, webmasters and identify the best sites to collaborate on content with.</p>
+			    			</div>
+						</div>
+						<div class="card" id="about-card-2">
+							<div class="card-body">
+								<h3 class="card-title">I Love To Code</h3>
+			    				<p class="card-text">As I dove more into the SEO world, I was very interested to learn know to build websites. I enrolled on a Codecademy course, to learn coding languages and became acquainted with different technologies to compliment my SEO experience and knowledge.</p>
+			    			</div>
+						</div>
+						<div class="card" id="about-card-3">
+							<div class="card-body">
+								<h3 class="card-title">My Spare Time</h3>
+			    				<p class="card-text">In my spare time, I also enjoy origami, working out and the odd Netflix documentary. I am also a proud cat mama, who just so happens to have the best desk buddy to keep me company as I code.
+			    				</p>
+			    			</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Projects -->
+			<section id="projects-main">
+				<div class= projects-content>
+					<h2>Projects</h2>
+					<div id="projects">
+						<div class="project" id="project-1">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject1()" id="showProjectHead1">Mixed Messages</h4>
+								<h4 onclick="hideProject1()" id="hideProjectHead1">Mixed Messages</h4>
+								<div class="smallProjects">Mixed Messages 
+									<div class="small-projects-link"> 
+										<a href="https://github.com/K95Monty/Mixed-Messages" target="_blank">Git Repository</a> | 
+										<a href="https://kathy-mixed-messages.netlify.app/" target="_blank">See Project</a>
+									</div>
+								</div>
+							</div>
+							<p>My very first JavaScript project! Generates random cat messages.</p>
+								<div class="project-image desktop" id="projectImg1" onclick="hideProject1()"></div>
+							<div class="project-link desktop" id="projectLink1">
+								<a href="https://github.com/K95Monty/Mixed-Messages" target="_blank">Git Repository</a> | 
+								<a href="https://kathy-mixed-messages.netlify.app/" target="_blank">See Project</a>
+							</div>					
+						</div>							
+						<div class="project" id="project-2">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject2()" id="showProjectHead2">The Cosy Food Club</h4>
+								<h4 onclick="hideProject2()" id="hideProjectHead2">The Cosy Food Club</h4>
+								<div class="smallProjects">The Cosy Food Club 
+									<div class="small-projects-link"> 
+										<a href="https://github.com/K95Monty/club-project" target="_blank">Git Repository</a> | 
+										<a href="https://kathy-cosy-tea.netlify.app/" target="_blank">See Project</a>
+									</div>
+								</div>
+							</div>
+							<p>CSS project ultilising a mixture of flexbox and grid, a simple website for a food club. Yummy.</p>
+								<div class="project-image desktop" id="projectImg2" onclick="hideProject2()">></div>
+							<div class="project-link desktop" id="projectLink2">
+								<a href="https://github.com/K95Monty/club-project" target="_blank">Git Repository</a> | 
+								<a href="https://kathy-cosy-tea.netlify.app/" target="_blank">See Project</a>
+							</div>						
+						</div>						
+						<div class="project" id="project-3">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject3()" id="showProjectHead3">Cosy Cats Adoption</h4>
+								<h4 onclick="hideProject3()" id="hideProjectHead3">Cosy Cats Adoption</h4>
+								<div class="smallProjects">Cosy Cats Adoption 
+									<div class="small-projects-link"> 
+										<a href="https://github.com/K95Monty/cosy-cats" target='_blank'>Git Repository</a> | 
+										<a href="https://kathy-cosy-cats.netlify.app/" target='_blank'>See Project</a>
+									</div>
+								</div>
+							</div>
+							<p>CSS grid project, a cat rescue/adoption page.</p>
+								<div class="project-image desktop" id="projectImg3" onclick="hideProject3()">></div>
+							<div class="project-link desktop" id="projectLink3">
+								<a href="https://github.com/K95Monty/cosy-cats" target='_blank'>Git Repository</a> | 
+								<a href="https://kathy-cosy-cats.netlify.app/" target='_blank'>See Project</a>
+							</div>				
+						</div>
+						<div class="project" id="project-4">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject4()" id="showProjectHead4">Rise Safari</h4>
+								<h4 onclick="hideProject4()" id="hideProjectHead4">Rise Safari</h4>
+								<div class="smallProjects">Rise Safari 
+									<div class="small-projects-link"> 
+										<a href="https://github.com/K95Monty/Rise-Safari" target='_blank'>Git Repository</a> | 
+										<a href="https://kathy-rise-safari.netlify.app/" target='_blank'>See Project</a>
+									</div>
+								</div>
+							</div>
+							<p>Based off of Capcom's Monster Hunter World, this project utilises Bootstrap to create a business landing page.</p>
+								<div class="project-image desktop" id="projectImg4" onclick="hideProject4()">></div>
+							<div class="project-link desktop" id="projectLink4">
+								<a href="https://github.com/K95Monty/Rise-Safari" target='_blank'>Git Repository</a> | 
+								<a href="https://kathy-rise-safari.netlify.app/" target='_blank'>See Project</a>
+							</div>				
+						</div>
+						<div class="project" id="project-5">
+							<div class="project-inline">
+								<i class="fas fa-long-arrow-alt-right"></i>
+								<h4 onclick="showProject5()" id="showProjectHead5">Hungry Secrets</h4>
+								<h4 onclick="hideProject5()" id="hideProjectHead5">Hungry Secrets</h4>
+								<div class="smallProjects">Hungry Secrets 
+									<div class="small-projects-link"> 
+										<a href="">Git Repository</a> | <a href="">See Project</a>
+									</div>
+								</div>
+							</div>
+							<p>Recipe app built using React, you can put together ingredients to create your own recipe.</p>
+								<div class="project-image desktop" id="projectImg5" onclick="hideProject5()">Adding soon</div>
+							<div class="project-link desktop" id="projectLink5">
+								<a href="">Git Repository</a> | <a href="">See Project</a>
+							</div>				
+						</div>
+					</div>	
+				</div>		
+			</section>
+		<!-- Skills -->
+			<aside id="skills-section">
+				<div class="skills-content">
+					<div class="skills-inline">
+						<h2>Skills & Technologies</h2>
+						<div class="skills">
+							<div class="skill">
+								<img src="css/icons/html.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/css.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/javascript.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/ruby.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/git.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/github.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/seo.png" alt="">
+							</div>
+							<div class="skill">
+								<img src="css/icons/react.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</main>
+		<!-- Footer -->
+		<div class="footer-background">
+		</div>
+		<div class="footer-overlay">
+		</div>
+		<footer>
+			<div id="footer-content">
+				<h2>Let's Chat</h2>
+				<h3>Want to get in touch? Contact me at: kathy95chapman@gmail.com</h3>
+				<div class="footer-contact">
+					<a href="https://www.facebook.com/xkathyxchapman" target="_blank">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.instagram.com/kathythecreator/" target="_blank">
+						<i class="fab fa-instagram-square"></i>	
+					</a>
+					<a href="https://github.com/K95Monty" target="_blank">
+						<i class="fab fa-github-square"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+			<div id="disclaimer">
+				<small>&copy; Copyright 
+					<span id="copyright">
+					<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+					</span>, Created with <i class="fas fa-heart"></i> <strong>Kathy Chapman</strong>
+				</small>
+			</div>
+		</footer>
+		<script type="text/javascript" src="portfolio.js">	</script>
+	</body>	
+</html>
