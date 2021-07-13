@@ -2,17 +2,14 @@
 	position: absolute;
 	height: 660px;
 	width: 100%;
-	background: #171618;
-	background: -moz-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
-	background: -webkit-linear-gradient(-45deg, #171618 0%, #312E33 66%, #39363C 100%);
-	background: linear-gradient(135deg, #171618 0%, #312E33 66%, #39363C 100%);
+	background: #1B181D;
 	z-index: -99;
 }
 
 .heading-overlay {
-	height: 100%;
+	height: 660px;
 	width: 100%;
-	background-image: url('../images/bright-squares.png');
+	background-image: url('../images/galaxy.jpg');
 	position: absolute;
 	opacity: 0.2;
 	z-index: -1;
@@ -22,7 +19,6 @@ header {
 	height: 660px;
 	width: 100%;
 	margin: 0 auto;
-	border-bottom: 3px solid #8C756F;
 	overflow: hidden;
 }
 
@@ -48,7 +44,6 @@ header {
 	width: 300px;
 	grid-column: 1 / span 1;
 	border-radius: 50%;
-	border: 7px double #FF7300;
 	box-shadow: 0 0 5px 0 rgba(140, 117, 111, 0.5),
 				0 0 15px -5px rgba(239, 239, 240, 0.7),
 				-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
@@ -57,14 +52,16 @@ header {
 }
 
 .heading-image h1 {
-	font-size: 3rem;
+	font-size: 3em;
 	padding-top: 30px;
 	font-weight: bold;
-	color: #FF7300;
-	text-shadow: 2px 2px 0 #1B181D,
-				 3px 2px 0 #86A5AA,
-				 5px 4px 5px #86A5AA,
-				 2px 2px 0 #EFEFF0;
+	color: #EF03A8;
+	text-shadow: 2px 2px 0 #262533,
+				 3px 2px 0 #262533,
+				 5px 4px 2px #F2F4F1,
+				 2px 2px 0 #A19EB7;
+
+
 	letter-spacing: 2px;
 }
 
@@ -81,21 +78,21 @@ header {
 
 .heading-text p {
 	padding: 20px;
-	font-size: 1.8rem;
+	font-size: 1.8em;
 	letter-spacing: 1.5px;
 }
 
 
 @media only screen and (max-width:1050px) {
 	.heading-text p {
-		font-size: 1.4rem;
+		font-size: 1.4em;
 	}
 
 }
 
 @media only screen and (max-width:1000px) {
 	.heading-text p {
-		font-size: 1.3rem;
+		font-size: 1.3em;
 		padding: 15px;
 	}
 	.heading-image img {
@@ -121,7 +118,7 @@ header {
 		text-align: center;
 	}
 	.heading-image h1 {
-		font-size: 2rem;
+		font-size: 2em;
 	}
 	.heading-text {
 		margin: 0 auto;
@@ -147,5 +144,19 @@ header {
 	.heading-image img {
 		height: 200px;
 		width: 200px;
+	}
+	.heading-text p {
+		margin-top: 8px;
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width:300px) {
+	.heading-text p {
+		font-size: 1em;
+	}
+	.heading-image img {
+		height: 150px;
+		width: 150px;
 	}
 }

@@ -1,5 +1,5 @@
 #about-main {
-	background-color: #EFEFF0;
+	padding-bottom: 20px;
 }
 
 .about-content {
@@ -11,7 +11,7 @@
 	font-size: 2rem;
 	padding: 100px 20px 40px 20px;
 	color: #1B181D;
-	text-shadow: 2px 2px 0 #EFEFF0,
+	text-shadow: 2px 2px 0 #8C756F,
 				 2px 2px 2px #8C756F,
 				 3px 3px 0px #1B181D;
 	letter-spacing: 2px;
@@ -24,7 +24,7 @@
 }
 
 .card {
-	background-color: #FF7300;
+	background-color: #1B181D;
 	margin: 0 20px;
 	padding: 20px;
 	min-height: 250px;
@@ -38,22 +38,17 @@
 .card-title {
 	padding: 15px 15px 0 15px;
 	font-size: 1.5rem;
-	color: #EFEFF0;
-	text-shadow: 1px 2px 1px #1B181D,
-				 2px 3px 0px #1B181D;
+	color: #F2F4F1;
+	text-shadow: 1px 2px 1px #EF03A8,
+				 2px 3px 0px #EF03A8;
 }
 
 .card-text {
 	padding: 15px;
 	line-height: 1.5;
 	font-size: 1.2rem;
-	color: #1B181D;
+	color: #F2F4F1;
 	opacity: 0.9;
-}
-
-#about-cat {
-	height: 30px;
-	display: inline;
 }
 
 @media only screen and (max-width:1250px) {
@@ -85,6 +80,9 @@
 @media only screen and (max-width:1300px) {
 	.about-content {
 		width: 95%;
+	}
+	.card {
+		height: auto;
 	}
 }
 

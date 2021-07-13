@@ -1,7 +1,6 @@
 #projects-main {
-	background-color: #EFEFF0;
+	
 	height: auto;
-	border-top: 20px solid #FF7300;
 }
 
 .projects-content {
@@ -14,7 +13,7 @@
 	font-size: 2rem;
 	padding: 100px 20px 40px 20px;
 	color: #1B181D;
-	text-shadow: 2px 2px 0 #EFEFF0,
+	text-shadow: 2px 2px 0 #8C756F,
 				 2px 2px 2px #8C756F,
 				 3px 3px 0px #1B181D;
 	letter-spacing: 2px;
@@ -55,7 +54,7 @@
 
 .small-projects-link a {
 	font-family: 'Archivo Black', sans-serif;
-	color: #FF7300;
+	color: #F2F4F1;
 }
 
 .small-projects-link a:hover {
@@ -73,7 +72,7 @@
 
 .project-inline i {
 	padding-right: 5px;
-	color: #FF7300;
+	color: #F2F4F1;
 }
 
 .project p {
@@ -90,7 +89,7 @@
 }
 
 .project-link a {
-	color: #FF7300;
+	color: #F2F4F1;
 	font-weight: bold;
 }
 
@@ -109,7 +108,7 @@
 }
 
 .project-image:hover {
-	border: 3px solid #FF7300;
+	border: 3px solid #EF03A8;
 	border-radius: 2px;
 	box-shadow: 2px 2px 0 rgba(140, 117, 111, 0.7),
 				0 0 10px 0 rgba(140, 117, 111, 0.5),

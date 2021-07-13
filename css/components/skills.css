@@ -1,5 +1,5 @@
 #skills-section {
-	background-color: #FF7300;
+	padding-bottom: 20px;
 }
 
 .skills-content{
@@ -7,13 +7,14 @@
 	margin: 0 auto;
 }
 
-.skills-inline h3 {
+.skills-inline h2 {
 	font-size: 1.8rem;
 	padding: 100px 20px 40px 20px;
 	color: #1B181D;
-	text-shadow: 2px 2px 0 #FF7300,
-				 2px 2px 2px #EFEFF0,
-				 3px 3px 0px #EFEFF0;
+	color: #1B181D;
+	text-shadow: 2px 2px 0 #8C756F,
+				 2px 2px 2px #8C756F,
+				 3px 3px 0px #1B181D;
 	letter-spacing: 2px;
 }
 

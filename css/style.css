@@ -10,6 +10,14 @@
 body, html {
 	font-size: 16px;
 	scroll-behavior: smooth;
+	
+}
+
+body {
+	background: #262533;
+background: -moz-linear-gradient(top, #262533 0%, #EF03A8 78%, #262533 100%);
+background: -webkit-linear-gradient(top, #262533 0%, #EF03A8 78%, #262533 100%);
+background: linear-gradient(to bottom, #262533 0%, #EF03A8 78%, #262533 100%);
 }
 
 p, a, li, ul, ol {
@@ -27,6 +35,11 @@ FF7300 - orange
 EFEFF0 - cream/white
 1B181D - dark blue */
 
+EF03A8 pink
+A19EB7 light grey
+262533 dark blue
+F2F4F1 white
+8E7A96 dark grey
 
 /*display certain content on different devices */
 
