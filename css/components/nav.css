@@ -97,8 +97,9 @@ nav {
 		padding: 0;
 	}
 	.nav-dropdown {
-		background-color: rgba(27, 24, 29, 0.8);
+		background-color: rgba(27, 24, 29, 0.99);
 		text-align: center;
+		height: 100vh;
 	}
 	.navbar-links a {
 		display: block;
