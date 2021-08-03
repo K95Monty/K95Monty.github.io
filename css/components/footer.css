@@ -11,6 +11,7 @@
 	width: 100%;
 	background-image: url('../images/galaxy.jpg');
 	position: absolute;
+	background-position: bottom;
 	opacity: 0.2;
 	z-index: -1;
 }
