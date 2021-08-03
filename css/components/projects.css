@@ -1,5 +1,4 @@
-#projects-main {
-	
+#projects {
 	height: auto;
 }
 
@@ -12,14 +11,14 @@
 .projects-content h2 {
 	font-size: 2rem;
 	padding: 100px 20px 40px 20px;
-	color: #1B181D;
-	text-shadow: 2px 2px 0 #8C756F,
-				 2px 2px 2px #8C756F,
+	color: black;
+	text-shadow: 3px 3px 0 rgba(242, 244, 241, 0.7),
+				 5px 5px 0px rgb(239, 3, 168),
 				 3px 3px 0px #1B181D;
 	letter-spacing: 2px;
 }
 
-#projects {
+.projects {
 	padding: 30px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -108,7 +107,7 @@
 }
 
 .project-image:hover {
-	border: 3px solid #EF03A8;
+	border: 3px solid black;
 	border-radius: 2px;
 	box-shadow: 2px 2px 0 rgba(140, 117, 111, 0.7),
 				0 0 10px 0 rgba(140, 117, 111, 0.5),
@@ -147,13 +146,13 @@
 }
 
 @media only screen and (max-width:1000px) {
-	#projects-main {
+	#projects {
 		border-top: none;
 	}
 }
 
 @media only screen and (max-width:1350px) {
-	#projects {
+	.projects {
 		display: block;
 	}
 	.project {
@@ -162,7 +161,7 @@
 	.project h4 {
 		display: none;
 	}
-	.projects p {
+	.project p {
 		height: auto;
 	}
 	.smallProjects {

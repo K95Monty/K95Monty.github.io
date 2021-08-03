@@ -56,12 +56,9 @@ header {
 	padding-top: 30px;
 	font-weight: bold;
 	color: #EF03A8;
-	text-shadow: 2px 2px 0 #262533,
-				 3px 2px 0 #262533,
-				 5px 4px 2px #F2F4F1,
-				 2px 2px 0 #A19EB7;
-
-
+	text-shadow: 5px 5px 0 black,
+				 8px 8px 0px rgba(242, 244, 241, 0.6),
+				 3px 3px 0px #1B181D;
 	letter-spacing: 2px;
 }
 
