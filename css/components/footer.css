@@ -40,6 +40,17 @@ footer h3 {
 	color: #8E7A96;
 }
 
+footer h3 a {
+	font-weight: bold;
+	color: #8E7A96;
+	transition: 0.3s;
+}
+
+footer h3 a:hover {
+	color: #EF03A8;
+}
+
+
 #footer-content {
 	text-align: left;
 	padding-top: 30px;
