@@ -27,6 +27,10 @@
 	padding-bottom: 20px;
 }
 
+.skill {
+	margin: 2px;
+}
+
 .skill img {
 	width: 30px;
 	height: 30px;
