@@ -47,28 +47,5 @@
 		document.getElementById("hideProjectHead3").style.display="none";
 		document.getElementById("showProjectHead3").style.display="inline-block";
 	}
-	function showProject4() {
-		document.getElementById("projectImg4").style.display = "block";
-		document.getElementById("projectLink4").style.display = "block";
-		document.getElementById("hideProjectHead4").style.display="inline-block";
-		document.getElementById("showProjectHead4").style.display="none";
-	}
-	function hideProject4() {
-		document.getElementById("projectImg4").style.display = "none";
-		document.getElementById("projectLink4").style.display = "none";
-		document.getElementById("hideProjectHead4").style.display="none";
-		document.getElementById("showProjectHead4").style.display="inline-block";
-	}
-		function showProject5() {
-		document.getElementById("projectImg5").style.display = "block";
-		document.getElementById("projectLink5").style.display = "block";
-		document.getElementById("hideProjectHead5").style.display="inline-block";
-		document.getElementById("showProjectHead5").style.display="none";
-	}
-	function hideProject5() {
-		document.getElementById("projectImg5").style.display = "none";
-		document.getElementById("projectLink5").style.display = "none";
-		document.getElementById("hideProjectHead5").style.display="none";
-		document.getElementById("showProjectHead5").style.display="inline-block";
-	}
+
 // end

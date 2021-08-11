@@ -61,7 +61,7 @@
 	transition: 0.5s ease all;
 }
 
-#hideProjectHead1, #hideProjectHead2, #hideProjectHead3, #hideProjectHead4, #hideProjectHead5  {
+#hideProjectHead1, #hideProjectHead2, #hideProjectHead3  {
 	display: none;
 }
 
@@ -77,6 +77,10 @@
 .project p {
 	padding: 20px 10px;
 	height: 100px;
+}
+
+.project p strong {
+	font-weight: bold;
 }
 
 .project-link {
@@ -122,24 +126,12 @@
 }
 
 #projectImg2 {
-	background-image: url("../images/cosy-food-club.png");
-	background-position: center;
-	background-size: cover;
-}
-
-#projectImg3 {
-	background-image: url("../images/cat-adopt.png");
-	background-position: center;
-	background-size: cover;
-}
-
-#projectImg4 {
 	background-image: url("../images/rise-safari.png");
 	background-position: center;
 	background-size: cover;
 }
 
-#projectImg5 {
+#projectImg3 {
 	background-image: url("../images/hungry-secrets.png");
 	background-position: center;
 	background-size: cover;
