@@ -86,6 +86,10 @@ footer h3 a:hover {
 	padding: 0 3px;
 }
 
+#disclaimer p {
+	font-size: 10px;
+}
+
 #disclaimer a {
 	color: #EF03A8;
 }
