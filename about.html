@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Kathy Chapman - Frontend Developer / Contact</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/png" href="./favicon.png" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/cae54144ac.js" crossorigin="anonymous"></script>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="navbar-logo">
+			<a href="./index.html">&lt; KC &sol;&gt;</a>
+		</div>
+		<div class="navbar-links desktop">
+			<a href="./index.html"><i class="fas fa-home"></i> Home</a>
+			<a href="./about.html"><i class="fas fa-user"></i> About</a>
+			<a href="./projects.html"><i class="fas fa-folder-open"></i> Projects</a>
+			<a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a>
+		</div>
+		<div class="navbar-links mobile">
+			<span id="menuHamburger" onclick="openMenu()">
+				<i class="fas fa-bars"></i>
+			</span>
+			<div class="nav-dropdown" id="nav-display">
+				<a href="./index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+				<a href="./about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+				<a href="./projects.html" onclick="closeMenu()"><i class="fas fa-folder-open"></i> Projects</a>
+				<a href="./contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+				<span id="menuX" onclick="closeMenu()">
+					<i class="far fa-window-close"></i>
+				</span>
+			</div>
+		</div>
+	</nav>
+	<header class="header-page header-about">
+		<section class="header-about-content">
+			<img src="css/images/kathy.jpg" alt="profile picture" id="profile-pic">
+			<div>
+				<h2>Kathy Chapman</h2>
+				<p><i class="fas fa-map-marker-alt"></i> Derby, United Kingdom</p>
+				<p><i class="fas fa-suitcase"></i> Frontend Developer &sol; SEO Executive Outreach</p>
+				<aside class="header-social">
+					<a href="https://www.facebook.com/xkathyxchapman" target="_blank">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.instagram.com/kathythecreator/" target="_blank">
+						<i class="fab fa-instagram-square"></i>
+					</a>
+					<a href="https://github.com/K95Monty" target="_blank">
+						<i class="fab fa-github-square"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</aside>
+			</div>
+			<h1>About Me</h1>
+			<i class="fas fa-user header-icon"></i>
+			<hr>
+			<aside class="header-about-aside">
+				<p>
+					I'm a frontend-developer who also works as an SEO outreach executive, I've been in the SEO industry
+					for over 3 years.
+					I found a new passion for creating, designing and building clean websites which are mobile-friendly,
+					interactive and easy on the eyes.
+					I'm very open to new ideas and new technologies to continue my professional development as a
+					frontend-developer.
+				</p>
+			</aside>
+			<div id="resume">
+				<a href="download/kathy-chapman-cv.pdf" download="kathy-chapman-cv">Download Resume <i
+						class="fas fa-file-download"></i></a>
+			</div>
+		</section>
+	</header>
+	<main id="about-main">
+		<section id="about-content">
+			<div class="about-card card">
+				<img src="/css/images/education.png" alt="">
+				<h2>Education</h2>
+				<i class="fas fa-graduation-cap"></i>
+				<div>
+					<ul>
+						<li>Codecademy - HTML & JavaScript</li>
+						<li>DataStrax AppDev Workshop (Sept 2021) </li>
+						<li>University of Derby</li>
+					</ul>
+				</div>
+				<div class="progress">
+					<h3>In Progress</h3>
+					<i class="fas fa-book-open"></i>
+					<ul>
+						<li>The Web Development Bootcamp 2020</li>
+					</ul>
+				</div>
+			</div>
+			<div class="about-card card">
+				<img src="/css/images/skills.png" alt="">
+				<h2>Skills</h2>
+				<i class="fas fa-cogs"></i>
+				<div>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>Bootstrap</li>
+						<li>API integration</li>
+						<li>Node.js</li>
+					</ul>
+				</div>
+			</div>
+			<div class="about-card card">
+				<img src="/css/images/tools.png" alt="">
+				<h2>Development Tools</h2>
+				<i class="fas fa-tools"></i>
+				<div>
+					<ul>
+						<li>Visual Studio Code</li>
+						<li>Sublime Text</li>
+						<li>Chrome Dev Tools</li>
+						<li>Google Fonts</li>
+						<li>Firefox Dev Tools</li>
+						<li>Figma</li>
+						<li>Firebase</li>
+						<li>Astra</li>
+						<li>GitHub</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<aside class="main-btn">
+		<a href="./projects.html">My Projects <i class="fas fa-arrow-circle-right"></i></a>
+	</aside>
+
+	<!-- Footer -->
+	<footer>
+		<section class="footer-social">
+			<a href="https://www.facebook.com/xkathyxchapman" target="_blank">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+			<a href="https://www.instagram.com/kathythecreator/" target="_blank">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+			<a href="https://github.com/K95Monty" target="_blank">
+				<i class="fab fa-github-square"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</section>
+		<aside id="disclaimer">
+			<p>&copy; Copyright
+				<time id="time" onload="getYear()"></time>, Created with <i class="fas fa-heart"></i> <strong>Kathy
+					Chapman</strong>
+		</aside>
+	</footer>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

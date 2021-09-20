@@ -1,244 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
 
-		 <title>Kathy Chapman - Portfolio</title>
-		 <meta content="width=device-width, initial-scale=1" name="viewport" />
-		 <meta name="description" content="">
-		 <meta name="author" content="">
+<head>
+	<meta charset="utf-8">
 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-		 
-		 <script src="https://kit.fontawesome.com/cae54144ac.js" crossorigin="anonymous"></script>
-		 <link href="css/style.css" type="text/css" rel="stylesheet">
-	</head>
-	<body>
-		<!-- Navigation bar -->
-		
-			<nav class="navbar" id="navbar">
-				<div class="navbar-logo">
-  					<a href="#kathychapman">Kathy Chapman</a>
-  				</div>
-  				<div class="navbar-links desktop">
-  					<a href="#about">About Me</a>
-  					<a href="#projects">Projects</a>
-  					<a href="#skills">Skills</a>
-  					<a href="#contact">Contact</a>
-  				</div>
-  				<div class="navbar-links mobile">
-  					<span id="menuHamburger" onclick="openMenu()">
-  						<i class="fas fa-bars"></i>
-					</span>
-  					<div class="nav-dropdown" id="nav-display">
-	  					<a href="#about" onclick="closeMenu()">About Me</a>
-	  					<a href="#projects" onclick="closeMenu()">Projects</a>
-	  					<a href="#skills" onclick="closeMenu()">Skills</a>
-	  					<a href="#contact" onclick="closeMenu()">Contact</a>
-	  					<span id="menuX" onclick="closeMenu()">
-	  						<i class="far fa-window-close"></i>
-						</span>
-  					</div>
-  				</div>	
-			</nav>
+	<title>Kathy Chapman - Frontend Developer / Contact</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/png" href="./favicon.png" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
 
-			<!-- Main heading -->
-		<div class="heading-background">
+	<script src="https://kit.fontawesome.com/cae54144ac.js" crossorigin="anonymous"></script>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="navbar-logo">
+			<a href="./index.html">&lt; KC &sol;&gt;</a>
 		</div>
-		<div class="heading-overlay">
+		<div class="navbar-links desktop">
+			<a href="./index.html"><i class="fas fa-home"></i> Home</a>
+			<a href="./about.html"><i class="fas fa-user"></i> About</a>
+			<a href="./projects.html"><i class="fas fa-folder-open"></i> Projects</a>
+			<a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a>
 		</div>
-		<header id="kathychapman">
-			<div class="heading-content">
-				<div class="heading-image">
-					<img src="css/images/kathy.jpg" alt="profile picture">
-					<h1>Hello World.</h1>
-				</div>
-				<div class="heading-text">
-					<p>I'm Kathy Chapman, working in SEO and a aspiring web developer.</p>
-				</div>
+		<div class="navbar-links mobile">
+			<span id="menuHamburger" onclick="openMenu()">
+				<i class="fas fa-bars"></i>
+			</span>
+			<div class="nav-dropdown" id="nav-display">
+				<a href="./index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+				<a href="./about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+				<a href="./projects.html" onclick="closeMenu()"><i class="fas fa-folder-open"></i> Projects</a>
+				<a href="./contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+				<span id="menuX" onclick="closeMenu()">
+					<i class="far fa-window-close"></i>
+				</span>
 			</div>
-		</header>
-		
-		<!--Who Am I -->
-		<main>
-			<section id="about">
-				<div class="about-content">
-					<h2>Who Am I</h2>				
-					<div class="about-cards">
-						<div class="card" id="about-card-1">
-							<div class="card-body">
-								<h3 class="card-title">I Work In SEO</h3>
-			    				<p class="card-text">I work for the UK's top rated link building agency based in Derby United Kingdom, focusing primarily on off-site SEO. My main responsibility is to outreach and build relationships with editors, webmasters and identify the best sites to collaborate on content with.</p>
-			    			</div>
-						</div>
-						<div class="card" id="about-card-2">
-							<div class="card-body">
-								<h3 class="card-title">I Love To Code</h3>
-			    				<p class="card-text">As I dove more into the SEO world, I was very interested to learn know to build websites. I enrolled on a Codecademy course, to learn coding languages and became acquainted with different technologies to compliment my SEO experience and knowledge.</p>
-			    			</div>
-						</div>
-						<div class="card" id="about-card-3">
-							<div class="card-body">
-								<h3 class="card-title">My Spare Time</h3>
-			    				<p class="card-text">In my spare time, I also enjoy origami, working out and the odd Netflix documentary. I am also a proud cat mama, who just so happens to have the best desk buddy to keep me company as I code.
-			    				</p>
-			    			</div>
-						</div>
-					</div>
-				</div>
+		</div>
+	</nav>
+	<header class="header-home">
+		<section class="heading-home-content">
+			<div id="heading-img"></div>
+			<section id="heading-home-text">
+				<span>Hello World.</span>
+				<h1>I'm Kathy Chapman,<br> Frontend-Developer,<br> SEO Expert.</h1>
+				<a href="./projects.html" class="header-btn">My Projects <i class="fas fa-arrow-circle-right"></i></a>
 			</section>
-			<!-- Projects -->
-			<section id="projects">
-				<div class= projects-content>
-					<h2>Projects</h2>
-					<div class="projects">
-						<div class="project" id="project-1">
-							<div class="project-inline">
-								<i class="fas fa-long-arrow-alt-right"></i>
-								<h4 onclick="showProject1()" id="showProjectHead1">Mixed Messages</h4>
-								<h4 onclick="hideProject1()" id="hideProjectHead1">Mixed Messages</h4>
-								<div class="smallProjects">Mixed Messages 
-									<div class="small-projects-link"> 
-										<a href="https://github.com/K95Monty/Mixed-Messages" target="_blank">Git Repository</a> | 
-										<a href="https://kathy-mixed-messages.netlify.app/" target="_blank">See Project</a>
-									</div>
-								</div>
-							</div>
-							<p><strong>Built with:</strong> HTML, CSS & JavaScript</p>
-								<div class="project-image desktop" id="projectImg1" onclick="hideProject1()"></div>
-							<div class="project-link desktop" id="projectLink1">
-								<a href="https://github.com/K95Monty/Mixed-Messages" target="_blank">Git Repository</a> | 
-								<a href="https://kathy-mixed-messages.netlify.app/" target="_blank">See Project</a>
-							</div>					
-						</div>							
-						<div class="project" id="project-2">
-							<div class="project-inline">
-								<i class="fas fa-long-arrow-alt-right"></i>
-								<h4 onclick="showProject2()" id="showProjectHead2">Rise Safari</h4>
-								<h4 onclick="hideProject2()" id="hideProjectHead2">Rise Safari</h4>
-								<div class="smallProjects">Rise Safari 
-									<div class="small-projects-link"> 
-										<a href="https://github.com/K95Monty/Rise-Safari" target='_blank'>Git Repository</a> | 
-										<a href="https://kathy-rise-safari.netlify.app/" target='_blank'>See Project</a>
-									</div>
-								</div>
-							</div>
-							<p><strong>Built with:</strong> HTML, CSS, Bootsstrap</p>
-								<div class="project-image desktop" id="projectImg2" onclick="hideProject2()"></div>
-							<div class="project-link desktop" id="projectLink2">
-								<a href="https://github.com/K95Monty/Rise-Safari" target='_blank'>Git Repository</a> | 
-								<a href="https://kathy-rise-safari.netlify.app/" target='_blank'>See Project</a>
-							</div>				
-						</div>
-						<div class="project" id="project-3">
-							<div class="project-inline">
-								<i class="fas fa-long-arrow-alt-right"></i>
-								<h4 onclick="showProject3()" id="showProjectHead3">Hungry Secrets</h4>
-								<h4 onclick="hideProject3()" id="hideProjectHead3">Hungry Secrets</h4>
-								<div class="smallProjects">Hungry Secrets 
-									<div class="small-projects-link"> 
-										<a href="https://github.com/K95Monty/Hungry-Secrets">Git Repository</a> | <a href="https://hungry-secrets.web.app/">See Project</a>
-									</div>
-								</div>
-							</div>
-							<p><strong>Built with:</strong> CSS, JSX, React, Firebase, Edamam API</p>
-								<div class="project-image desktop" id="projectImg3" onclick="hideProject3()"></div>
-							<div class="project-link desktop" id="projectLink3">
-								<a href="https://github.com/K95Monty/Hungry-Secrets">Git Repository</a> | 
-								<a href="https://hungry-secrets.web.app/">See Project</a>
-							</div>				
-						</div>
-					</div>	
-				</div>		
+		</section>
+	</header>
+	<main id="home-main">
+		<h2>Who Am I?</h2>
+		<div id="home-content">
+			<section class="home-card card">
+				<img src="" alt="">
+				<h3>About Me</h3>
+				<i class="fas fa-cat"></i>
+				<p>I'm a frontend-developer who also works as an SEO outreach executive, I've been in the SEO industry
+					for over 3 years.
+					<a href="./about.html" id="read">read more...</a>
+				</p>
 			</section>
-		<!-- Skills -->
-			<aside id="skills">
-				<div class="skills-content">
-					<div class="skills-inline">
-						<h2>Skills & Technologies</h2>
-						<h3>Using:</h3>
-						<div class="skills">
-							<div class="skill">
-								<img src="css/icons/html.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="css/icons/css.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="css/icons/javascript.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="css/icons/git.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="css/icons/github.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="css/icons/seo.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="css/icons/react.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="https://img.icons8.com/color/48/000000/firebase.png"/>
-							</div>
-						</div>
-						<h3>Leanring:</h3>
-						<div class="skills">
-							<div class="skill">
-								<img src="css/icons/ruby.png" alt="">
-							</div>
-							<div class="skill">
-								<img src="https://img.icons8.com/color/48/000000/vue-js.png"/>
-							</div>
-							<div class="skill">
-								<img src="https://img.icons8.com/ios-filled/50/000000/angularjs.png"/>
-							</div>
-							<div class="skill">
-								<img src="https://img.icons8.com/color/48/000000/php.png"/>
-							</div>
-							<div class="skill">
-								<img src="https://img.icons8.com/color/48/000000/python--v1.png"/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</aside>
-		</main>
-		<!-- Footer -->
-		<div class="footer-background" id="contact">
+			<section class="home-card card">
+				<img src="" alt="">
+				<h3>Development</h3>
+				<i class="fas fa-laptop-code"></i>
+				<p>I love learning <strong></strong>Web Development</strong>, I build websites and web applications with
+					clean, maintainable code with a focus on modern design.</p>
+			</section>
+			<section class="home-card card">
+				<img src="" alt="">
+				<h3>Design</h3>
+				<i class="fas fa-palette"></i>
+				<p>I love designing and coming up with new ideas for interactive creative projects.</p>
+			</section>
+			<section class="home-card card">
+				<img src="" alt="">
+				<h3>Responsive & Accessible</h3>
+				<i class="fas fa-mobile-alt"></i>
+				<p>My work aims to be mobile-friendy, responsive and accessible to provide a great experience for
+					visitors</p>
+			</section>
 		</div>
-		<div class="footer-overlay">
-		</div>
-		<footer>
-			<div id="footer-content">
-				<h2>Let's Chat</h2>
-				<h3>Want to get in touch? Contact me at: <a href="kathy95chapman@gmail.com" target="_blank">kathy95chapman@gmail.com</a></h3>
-				<div class="footer-contact">
-					<a href="https://www.facebook.com/xkathyxchapman" target="_blank">
-						<i class="fab fa-facebook-square"></i>
-					</a>
-					<a href="https://www.instagram.com/kathythecreator/" target="_blank">
-						<i class="fab fa-instagram-square"></i>	
-					</a>
-					<a href="https://github.com/K95Monty" target="_blank">
-						<i class="fab fa-github-square"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</div>
-			</div>
-			<div id="disclaimer">
-				<small>&copy; Copyright 
-					<span id="copyright">
-					<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-					</span>, Created with <i class="fas fa-heart"></i> <strong>Kathy Chapman</strong>
-				</small>
-				<p>Icons from <a href="https://icons8.com" target="_blank">Icons8</a></p>
-			</div>
-		</footer>
-		<script type="text/javascript" src="app.js"></script>
-	</body>	
+	</main>
+	<aside class="main-btn">
+		<a href="./contact.html">Say hi! <i class="fas fa-arrow-circle-right"></i></a>
+	</aside>
+	<footer>
+		<section class="footer-social">
+			<a href="https://www.facebook.com/xkathyxchapman" target="_blank">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+			<a href="https://www.instagram.com/kathythecreator/" target="_blank">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+			<a href="https://github.com/K95Monty" target="_blank">
+				<i class="fab fa-github-square"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</section>
+		<aside id="disclaimer">
+			<p>&copy; Copyright
+				<time id="time" onload="getYear()"></time>, Created with <i class="fas fa-heart"></i> <strong>Kathy
+					Chapman</strong>
+		</aside>
+	</footer>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+
 </html>

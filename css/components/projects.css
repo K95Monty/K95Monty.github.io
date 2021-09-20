@@ -1,193 +1,96 @@
-#projects {
-	height: auto;
-}
-
-.projects-content {
-	width: 80%;
-	margin: 0 auto;
-	font-size: 1.5rem;
-}
-
-.projects-content h2 {
-	font-size: 2rem;
-	padding: 100px 20px 40px 20px;
-	color: black;
-	text-shadow: 3px 3px 0 rgba(242, 244, 241, 0.7),
-				 5px 5px 0px rgb(239, 3, 168),
-				 3px 3px 0px #1B181D;
-	letter-spacing: 2px;
-}
-
-.projects {
-	padding: 30px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: minmax(100px, auto);
-	grid-gap: 10px;
-	letter-spacing: 1px;
-}
-
-.project {
-	font-size: 1.2rem;
-	line-height: 1.5;
-	padding: 10px;
-}
-
-.project h4 {
-	font-size: 1.5rem;
-	padding: 10 0px;
-}
-
-.project h4:hover {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-.smallProjects {
-	font-family: 'Archivo Black', sans-serif;
-	display: none;
-	font-size: 1.5rem;
-	padding: 10 0px;
-	color: rgb(27, 24, 29);
-}
-
-.small-projects-link a {
-	font-family: 'Archivo Black', sans-serif;
-	color: #F2F4F1;
-}
-
-.small-projects-link a:hover {
-	color: black;
-	transition: 0.5s ease all;
-}
-
-#hideProjectHead1, #hideProjectHead2, #hideProjectHead3  {
-	display: none;
-}
-
-.project-inline i, h4{
-	display: inline;
-}
-
-.project-inline i {
-	padding-right: 5px;
-	color: #F2F4F1;
+/*Project Main*/
+.projects-content, .future-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    row-gap: 20px;
+	text-align: center;
 }
 
 .project p {
-	padding: 20px 10px;
-	height: 100px;
+	padding: 0 0 10px 30px;
 }
 
-.project p strong {
-	font-weight: bold;
+.project h3 {
+	margin-top: 10px;
 }
 
-.project-link {
-	font-family: 'Archivo Black', sans-serif;
-	display: none;
-	text-align: left;
+.project img {
+	width: 90%;
+	height: auto;
+	border-radius: 8px;
+	border: 3px solid #ff5a6a;
+	box-shadow: 4px 6px 6px rgba(16, 49, 74, 0.5),
+                -4px 6px 6px rgba(16, 49, 74, 0.5);
+}
+
+.project-skills {
+	padding-bottom: 20px;
+}
+
+.project-skills li {
+	padding-top: 5px;
+}
+
+.project-skills i {
 	font-size: 1.5em;
-	padding-top: 3px;
 }
 
-.project-link a {
-	color: #F2F4F1;
+.project aside {
+	text-align: center;
+	font-size: 1.2em;
+    font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+
+.project aside a{
+	color: #10314a;
+    border: 2px solid #10314a;
+    border-radius: 5px;
+	box-shadow: 2px 2px 0 #10314a;
+    padding: 10px;
+	width: 80px;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.project aside a:hover {
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.project button {
+	margin: 20px auto;
+	padding: 8px 10px;
+	font-size: 1em;
 	font-weight: bold;
+	background-color: #ff5a6a;
+	color: #10314a;
+	border: 2px solid #10314a;
+    border-radius: 5px;
 }
 
-.project-link a:hover {
-	color: black;
-	transition: 0.5s ease all;
+.project button:active {
+	transform: scale(0.98);
+    box-shadow: 4px 2px 4px rgba(16, 49, 74, 0.5),
+                -4px 2px 4px rgba(16, 49, 74, 0.5);
 }
 
-.project-image {
+.project button i {
+	font-size: 1em !important;
+}
+
+.displayStack {
 	display: none;
-	height: 200px;
-	width: auto;
-	border: 3px solid #EFEFF0;
-	border-radius: 2px;
-	transition: border 0.3s ease;
 }
 
-.project-image:hover {
-	border: 3px solid black;
-	border-radius: 2px;
-	box-shadow: 2px 2px 0 rgba(140, 117, 111, 0.7),
-				0 0 10px 0 rgba(140, 117, 111, 0.5),
-				0 0 15px -5px rgba(140, 117, 111),
-				-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
+.hide-stack {
+	display: none;
 }
 
-#projectImg1 {
-	background-image: url("../images/mixed-messages.png");
-	background-position: center;
-	background-size: cover;
+#projects-main #what-next {
+	padding-top: 60px;
 }
 
-#projectImg2 {
-	background-image: url("../images/rise-safari.png");
-	background-position: center;
-	background-size: cover;
-}
-
-#projectImg3 {
-	background-image: url("../images/hungry-secrets.png");
-	background-position: center;
-	background-size: cover;
-}
-
-@media only screen and (max-width:1000px) {
-	#projects {
-		border-top: none;
-	}
-}
-
-@media only screen and (max-width:1350px) {
-	.projects {
-		display: block;
-	}
-	.project {
-		display: block;
-	}
-	.project h4 {
-		display: none;
-	}
-	.project p {
-		height: auto;
-	}
-	.smallProjects {
-		display: inline-block;
-		font-size: 1.2rem;
-	}	
-}
-
-@media only screen and (max-width:800px) {
-	.projects-content {
-		font-size: 1.2rem;
-	}
-	.projects-content h2 {
-		padding: 50px 20px 0 20px;
-		font-size: 1.5rem;
-		text-align: center;
-	}
-	.project p {
-		font-size: 1.1rem;
-	}
-}
-
-@media only screen and (max-width:500px) {
-	.projects-content {
-		font-size: 1rem;
-		width: 95%;
-	}
-	.projects-content h2 {
-	font-size: 1.5rem;
-	}
-	.smallProjects {
-		font-size: 1rem;
-	}
-	.project p {
-		font-size: 0.9rem;
-	}
-}

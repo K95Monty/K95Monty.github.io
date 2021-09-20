@@ -10,42 +10,48 @@
 		document.getElementById("menuX").style.display = "none";
 	}
 // end
-//Show Project Images
-	function showProject1() {
-		document.getElementById("projectImg1").style.display = "block";
-		document.getElementById("projectLink1").style.display = "block";
-		document.getElementById("hideProjectHead1").style.display="inline-block";
-		document.getElementById("showProjectHead1").style.display="none";
+
+//Footer Date
+	function getYear() {
+		const year = new Date().getFullYear();
+		return year;
 	}
-	function hideProject1() {
-		document.getElementById("projectImg1").style.display = "none";
-		document.getElementById("projectLink1").style.display = "none";
-		document.getElementById("hideProjectHead1").style.display="none";
-		document.getElementById("showProjectHead1").style.display="inline-block";
+document.getElementById("time").innerHTML = getYear();
+// end
+
+//Projects show and hide stack
+	function showStack1() {
+		document.getElementById('stack1').style.display = 'block';
+		document.getElementById('hide1').style.display = 'block';
+		document.getElementById('show1').style.display = 'none';
 	}
-	function showProject2() {
-		document.getElementById("projectImg2").style.display = "block";
-		document.getElementById("projectLink2").style.display = "block";
-		document.getElementById("hideProjectHead2").style.display="inline-block";
-		document.getElementById("showProjectHead2").style.display="none";
-	}
-	function hideProject2() {
-		document.getElementById("projectImg2").style.display = "none";
-		document.getElementById("projectLink2").style.display = "none";
-		document.getElementById("hideProjectHead2").style.display="none";
-		document.getElementById("showProjectHead2").style.display="inline-block";
-	}
-	function showProject3() {
-		document.getElementById("projectImg3").style.display = "block";
-		document.getElementById("projectLink3").style.display = "block";
-		document.getElementById("hideProjectHead3").style.display="inline-block";
-		document.getElementById("showProjectHead3").style.display="none";
-	}
-	function hideProject3() {
-		document.getElementById("projectImg3").style.display = "none";
-		document.getElementById("projectLink3").style.display = "none";
-		document.getElementById("hideProjectHead3").style.display="none";
-		document.getElementById("showProjectHead3").style.display="inline-block";
+	function hideStack1() {
+		document.getElementById('stack1').style.display = 'none';
+		document.getElementById('hide1').style.display = 'none';
+		document.getElementById('show1').style.display = 'block';
 	}
 
-// end
+	function showStack2() {
+		document.getElementById('stack2').style.display = 'block';
+		document.getElementById('hide2').style.display = 'block';
+		document.getElementById('show2').style.display = 'none';
+	}
+	function hideStack2() {
+		document.getElementById('stack2').style.display = 'none';
+		document.getElementById('hide2').style.display = 'none';
+		document.getElementById('show2').style.display = 'block';
+	}
+
+	function showStack3() {
+		document.getElementById('stack3').style.display = 'block';
+		document.getElementById('hide3').style.display = 'block';
+		document.getElementById('show3').style.display = 'none';
+	}
+	function hideStack3() {
+		document.getElementById('stack3').style.display = 'none';
+		document.getElementById('hide3').style.display = 'none';
+		document.getElementById('show3').style.display = 'block';
+	}
+	
+
+

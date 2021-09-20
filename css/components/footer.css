@@ -1,84 +1,31 @@
-.footer-background {
-	position: absolute;
-	height: 450px;
-	width: 100%;
-	background: #1B181D;
-	z-index: -99;
-}
-
-.footer-overlay {
-	height: 450px;
-	width: 100%;
-	background-image: url('../images/galaxy.jpg');
-	position: absolute;
-	background-position: bottom;
-	opacity: 0.2;
-	z-index: -1;
-}
-
 footer {
-	font-size: 1.5em;
-	color: #8C756F;
+	position: absolute;
+	font-size: 1em;
+	color: #628bbd;
+	background-color: #10314a;
 	line-height: 1.5;
-	height: 450px;
+	text-align: center;
 	width: 100%;
 }
 
-footer h2 {
-	font-size: 2em;
-	color: #EF03A8;
-	text-shadow: 3px 3px 0 black,
-				 5px 5px 0px rgba(242, 244, 241, 0.6),
-				 3px 3px 0px #1B181D;
-	padding: 40px 20px 40px 20px;
-	letter-spacing: 2px;
+.footer-social {
+	padding: 15px 0;
 }
 
-footer h3 {
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 1px;
-	color: #8E7A96;
-}
-
-footer h3 a {
-	font-weight: bold;
-	color: #8E7A96;
-	transition: 0.3s;
-}
-
-footer h3 a:hover {
-	color: #EF03A8;
-}
-
-
-#footer-content {
-	text-align: left;
-	padding-top: 30px;
-	width: 80%;
-	margin: 0 auto;
-}
-
-.footer-contact {
-	padding-top: 30px;
-}
-
-.footer-contact i {
-	padding-right: 8px;
-	color: #8E7A96;
+.footer-social i {
+	padding: 8px;
+	color: #628bbd;
 	font-size: 2rem;
-	padding-bottom: 30px;
 	transition: color 0.5s ease;
 }
 
-.footer-contact i:hover {
-	color: #EF03A8;
+.footer-social i:hover {
+	color: #ff5a6a;
 }
 
 #disclaimer {
 	text-align: center;
-	padding: 10px;
-	font-size: 1em;
-	border-top: 2px solid #8C756F;
+	border-top: 2px solid #628bbd;
 }
 
 #disclaimer i {
@@ -86,72 +33,6 @@ footer h3 a:hover {
 	padding: 0 3px;
 }
 
-#disclaimer p {
-	font-size: 10px;
-}
-
 #disclaimer a {
-	color: #EF03A8;
-}
-
-@media only screen and (min-width:800px) {
-	#contact-message {
-		height:200px;
-		width: 80%;
-	}
-}
-
-@media only screen and (max-width:800px) {
-	footer {
-		font-size: 1.2em;
-		text-align: center;
-	}
-	#footer-content h2 {
-	padding: 50px 20px 40px 20px;
-	}
-	#contactBtn, #contact-name, #contact-email, #contact-subject, #contact-message {
-		font-size: 1em;
-	}
-	#footer-content {
-		text-align: center;
-		margin: 0 auto;
-	}
-	.footer-contact i {
-		font-size: 1.5em;
-	}
-	footer, .footer-background, .footer-overlay {
-		height: 400px;
-	}
-}
-
-@media only screen and (max-width:500px) {
-	footer {
-		font-size: 1em;
-	}
-	#footer-content h2 {
-	font-size: 1.5em;
-	padding: 50px 20px 40px 20px;
-	}
-	#contactBtn, #contact-name, #contact-email, #contact-subject, #contact-message {
-		font-size: 1em;
-	}
-	#footer-content {
-		text-align: center;
-		margin: 0 auto;
-	}
-	.footer-contact i {
-		font-size: 1.2em;
-	}
-	#disclaimer {
-	font-size: 1em;
-	}
-	footer, .footer-background, .footer-overlay {
-		height: 350px;
-	}
-}
-
-@media only screen and (max-width:350px) {
-	footer, .footer-background, .footer-overlay {
-		height: 380px;
-	}
+	color: #628bbd;
 }

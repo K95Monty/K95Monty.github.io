@@ -1,0 +1,8 @@
+.header-contact p, .header-contact aside {
+    position: relative;
+    bottom: 80px;
+}
+
+.header-contact p {
+	font-size: 1.5em;
+}

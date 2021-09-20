@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Kathy Chapman - Frontend Developer / Contact</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cae54144ac.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="./index.html">&lt; KC &sol;&gt;</a>
+        </div>
+        <div class="navbar-links desktop">
+            <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="./about.html"><i class="fas fa-user"></i> About</a>
+            <a href="./projects.html"><i class="fas fa-folder-open"></i> Projects</a>
+            <a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="navbar-links mobile">
+            <span id="menuHamburger" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="nav-dropdown" id="nav-display">
+                <a href="./index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+                <a href="./about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+                <a href="./projects.html" onclick="closeMenu()"><i class="fas fa-folder-open"></i> Projects</a>
+                <a href="./contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+                <span id="menuX" onclick="closeMenu()">
+                    <i class="far fa-window-close"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <header class="header-page header-project">
+        <section class="header-project-content">
+            <h1>My Projects</h1>
+            <i class="fas fa-folder-open header-icon"></i>
+            <hr>
+            <ul class="header-projects-list">
+                <li>
+                    <a href="#cat">Cat Messages</a>
+                </li>
+                <li>
+                    <a href="#rise">Rise Safari</a>
+                </li>
+                <li>
+                    <a href="#hung">Hungry Secrets</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main id="projects-main">
+        <section class="projects-content">
+            <section class="project card">
+                <h2 id="cat">Cat Messages <i class="fas fa-paw"></i></h2>
+                <p>A fun little website that takes in a name to return a random message, with a professional
+                    cat-translation added - just so you know what the meows mean.</p>
+                <img src=".\css\images\mixed-messages.png" alt="Cat Messages screenshot">
+                <button onclick="showStack1()" id="show1" class="show-stack">See Stack <i
+                        class="far fa-arrow-alt-circle-down"></i></button>
+                <button onclick="hideStack1()" id="hide1" class="hide-stack">Hide Stack <i
+                        class="far fa-arrow-alt-circle-up"></i></button>
+                <ul class="project-skills displayStack" id="stack1">
+                    <h3>Stack</h3>
+                    <li><i class="fab fa-html5"></i> HTML5</li>
+                    <li><i class="fab fa-css3"></i> CSS3</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript E26</li>
+                </ul>
+                <aside class="project-btn">
+                    <a href="https://github.com/K95Monty/Mixed-Messages" target="_blank">GitHub</a> | <a href="https://kathy-mixed-messages.netlify.app/" target="_blank">Demo</a>
+                </aside>
+            </section>
+            <section class="project card">
+                <h2 id="rise">Rise Safari <i class="fas fa-hippo"></i></h2>
+                <p>This project focuses on ultilising Bootstrap and it's many components; to display a clean and modern
+                    business landing page. Based on the popular games franchise, Monster Hunter.</p>
+                <img src=".\css\images\rise-safari.png" alt="Rise Safari screenshot">
+                <button onclick="showStack2()" id="show2" class="show-stack">See Stack <i
+                        class="far fa-arrow-alt-circle-down"></i></button>
+                <button onclick="hideStack2()" id="hide2" class="hide-stack">Hide Stack <i
+                        class="far fa-arrow-alt-circle-up"></i></button>
+                <ul class="project-skills displayStack" id="stack2">
+                    <h3>Stack</h3>
+                    <li><i class="fab fa-html5"></i> HTML5</li>
+                    <li><i class="fab fa-css3"></i> CSS3</li>
+                    <li><i class="fab fa-bootstrap"></i> Bootstrap5</li>
+                </ul>
+                <aside class="project-btn">
+                    <a href="https://github.com/K95Monty/Rise-Safari" target="_blank">GitHub</a> | <a href="https://kathy-rise-safari.netlify.app/" target="_blank">Demo</a>
+                </aside>
+            </section>
+            <section class="project card">
+                <h2 id="hung">Hungry Secrets <i class="fas fa-drumstick-bite"></i></h2>
+                <p>Hungry Secrets is a web application, built with React and Node.js to bring back recipes based on
+                    search criteria. The project uses the Endmam Recipe API to access a database of recipes.</p>
+                <img src=".\css\images\hungry-secrets.png" alt="Hungry Secrets screenshot">
+                <button onclick="showStack3()" id="show3" class="show-stack">See Stack <i
+                        class="far fa-arrow-alt-circle-down"></i></button>
+                <button onclick="hideStack3()" id="hide3" class="hide-stack">Hide Stack <i
+                        class="far fa-arrow-alt-circle-up"></i></button>
+                <ul class="project-skills displayStack" id="stack3">
+                    <h3>Stack</h3>
+                    <li><i class="fab fa-html5"></i> HTML5</li>
+                    <li><i class="fab fa-css3"></i> CSS3</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript E26</li>
+                    <li><i class="fab fa-node-js"></i> Node.js</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fas fa-stream"></i> Edamam</li>
+                </ul>
+                <aside class="project-btn">
+                    <a href="https://github.com/K95Monty/Hungry-Secrets" target="_blank">GitHub</a> | <a href="https://hungry-secrets.web.app/" target="_blank">Demo</a>
+                </aside>
+            </section>
+        </section>
+
+        <h2 id="what-next">What's Next?</h2>
+        <section class="future-content">
+            <section class="future card">
+                <img src="">
+                <h3>JQuery</h3>
+                <h4>Approach:</h4>
+                <p>blah blah this is my plan</p>
+            </section>
+            <section class="future card">
+                <img src="">
+                <h3>Ruby</h3>
+                <h4>Approach:</h4>
+                <p>blah blah this is my plan</p>
+            </section>
+            <section class="future card">
+                <img src="">
+                <h3>Three.js</h3>
+                <h4>Approach:</h4>
+                <p>blah blah this is my plan</p>
+            </section>
+            <section class="future card">
+                <img src="">
+                <h3>Vue</h3>
+                <h4>Approach:</h4>
+                <p>blah blah this is my plan</p>
+            </section>
+            <section class="future card">
+                <img src="">
+                <h3>Angular</h3>
+                <h4>Approach:</h4>
+                <p>blah blah this is my plan</p>
+            </section>
+        </section>
+    </main>
+    <aside class="main-btn">
+        <a href="./contact.html">Say hi! <i class="fas fa-arrow-circle-right"></i></a>
+    </aside>
+    <footer>
+        <section class="footer-social">
+            <a href="https://www.facebook.com/xkathyxchapman" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/kathythecreator/" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://github.com/K95Monty" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/katherine-chapman-9aab74128/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </section>
+        <aside id="disclaimer">
+            <p>&copy; Copyright
+                <time id="time" onload="getYear()"></time>, Created with <i class="fas fa-heart"></i> <strong>Kathy
+                    Chapman</strong>
+        </aside>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+main #home-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.home-card i {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+#read {
+    color: #10314a;
+    font-weight: bold;
+}
+
+#read:hover {
+    color: #fff;
+    transition: 0.3s ease all;
+}

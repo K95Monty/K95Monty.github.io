@@ -1,159 +1,215 @@
-.heading-background {
-	position: absolute;
-	height: 660px;
-	width: 100%;
-	background: #1B181D;
-	z-index: -99;
-}
-
-.heading-overlay {
-	height: 660px;
-	width: 100%;
-	background-image: url('../images/galaxy.jpg');
-	position: absolute;
-	opacity: 0.2;
-	z-index: -1;
-}
-
-header {
-	height: 660px;
+header { /*all header */
 	width: 100%;
 	margin: 0 auto;
-	overflow: hidden;
+	padding: 80px 30px 30px 30px;
+	background-image: url('/css/images/pink.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-color: #ff5a6a; */
+	z-index: 1;
 }
 
-.heading-content {
-	width: 60%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-items: space-around;
-	align-items: center;
-	padding-top: 60px;
+/*Home Page Header*/
+.heading-home-content {
+	margin: auto;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.heading-image {
-	align-self: center;
-	text-align: center;
-	margin-top: 50px;
-	justify-self: space-around;
-}
-
-.heading-image img{
+.heading-home-content div {
 	height: 300px;
 	width: 300px;
-	grid-column: 1 / span 1;
+	background-image: url('/css/images/laptop.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: inline-block;
+	margin: 30px;
+}
+
+#heading-home-text {
+	display: flex;
+	margin: 30px;
+	align-self: center;
+	flex-direction: column;
+}
+
+#heading-home-text span {
+	color: #10314a;
+	width: 60%;
+	animation: typing 2s steps(22), blink .3s step-end infinite alternate;
+	animation-delay: 4s;
+	/* animation-iteration-count: infinite; */
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 2em;
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blink {
+	50% {
+	  border-color: transparent
+	}
+  }
+
+#heading-home-text h1 {
+	padding: 30px 0;
+	font-size: 2.2em;
+	text-shadow: 2px 2px 2px #ffffff,
+				 4px 3px 2px rgba(255, 255, 255, 0.5);
+}
+
+/*Page Headers*/
+.header-page {
+	text-align: center;
+}
+
+.header-page h1 {
+	padding: 30px 0;
+	font-size: 2.2em;
+	text-shadow: 2px 2px 2px #ffffff,
+				 4px 3px 2px rgba(255, 255, 255, 0.5);
+}
+/*About Haeder*/
+.header-about #profile-pic {
+    height: 300px;
+	width: 300px;
+    border: 2px solid #10314a;
 	border-radius: 50%;
-	box-shadow: 0 0 5px 0 rgba(140, 117, 111, 0.5),
-				0 0 15px -5px rgba(239, 239, 240, 0.7),
-				-5px 0px 5px -7px rgba(134, 165, 170, 0.5);
-	object-fit: cover;
+    box-shadow: 4px 6px 4px rgba(16, 49, 74, 0.7),
+                -4px 6px 4px rgba(16, 49, 74, 0.7);
+    object-fit: cover;
 	object-position: 0 20%;
 }
 
-.heading-image h1 {
-	font-size: 3em;
-	padding-top: 30px;
+.header-about-content {
+	margin: 0 auto;
+	width: 75%;
 	font-weight: bold;
-	color: #EF03A8;
-	text-shadow: 5px 5px 0 black,
-				 8px 8px 0px rgba(242, 244, 241, 0.6),
-				 3px 3px 0px #1B181D;
-	letter-spacing: 2px;
 }
 
-.heading-text {
-	grid-column: 2 / span 1;
-	height: 180px;
+.header-about-content div {
+    padding: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.header-about-content h2 {
+    font-size: 1.5em;
+	text-shadow: 2px 2px 2px #ffffff,
+				 4px 3px 2px rgba(255, 255, 255, 0.5);
+}
+
+.header-about-content p {
+    padding: 10px 0;
+}
+
+.header-about-aside {
+	margin: 0 auto;
+	text-align: left;
+	font-size: 1.2em;
+	width: 50%;
+	position: relative;
+	bottom: 100px;
+}
+
+.header-about #resume a{
+    color: #10314a;
+    border: 4px solid #10314a;
+	box-shadow: 4px 6px 4px rgba(16, 49, 74, 0.2),
+                -4px 6px 4px rgba(16, 49, 74, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header-about #resume a:hover {
+	background-color: #628bbd;
+	color: #ffffff;
+	transition: 0.5s ease;
+}
+
+/*Contact Haeder*/
+.header-contact-content i {
+	padding: 8px;
+	color: #10314a;
+	font-size: 2rem;
+	transition: color 0.5s ease;
+}
+
+.header-contact-content .header-social i:hover {
+	color: #fff;
+}
+
+/*Project Header*/
+.header-project ul{
+	position: relative;
+	bottom: 100px;
+}
+
+.header-project li{
+	display: inline;
+	margin: 4px;
 	font-weight: bold;
-	justify-self: start;
-	width: 80%;
-	line-height: 1.6;
-	letter-spacing: 1px;
-	color: #EFEFF0;
+	font-size: 1.2em;
 }
 
-.heading-text p {
-	padding: 20px;
-	font-size: 1.8em;
-	letter-spacing: 1.5px;
+.header-project li a{
+	padding: 8px 10px;
+	color: #10314a;
+	text-align: center;
 }
 
-
-@media only screen and (max-width:1050px) {
-	.heading-text p {
-		font-size: 1.4em;
-	}
-
+.header-project li a:hover{
+	background-color: #628bbd;
+	border-radius: 4px;
+	transition: 0.5s ease;
 }
 
-@media only screen and (max-width:1000px) {
-	.heading-text p {
-		font-size: 1.3em;
-		padding: 15px;
-	}
-	.heading-image img {
-		height: 280px;
-		width: 280px;
-	}
+/*Header Button & Icons*/
+.header-btn {
+	color: #10314a;
+    border: 4px solid #10314a;
+	box-shadow: 4px 6px 4px rgba(16, 49, 74, 0.2),
+                -4px 6px 4px rgba(16, 49, 74, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-@media only screen and (min-width:1000) {
-	.heading-image {
-		justify-self: end;
-		float: right;
-	}
-	.heading-text {
-		justify-self: start;
-		float: left;
-	}
+.header-btn:hover {
+	background-color: #628bbd;
+	color: #ffffff;
+	transition: 0.5s ease;
 }
 
-@media only screen and (max-width:1500px) {
-	.heading-content {
-		display: block;
-		text-align: center;
-	}
-	.heading-image h1 {
-		font-size: 2em;
-	}
-	.heading-text {
-		margin: 0 auto;
-		width: 70%;
-		height: auto;
-	}
-	.heading-text p {
-		padding: 10px;
-	}
-	.heading-image img {
-		height: 250px;
-		width: 250px;
-	}
+.header-social i {
+	padding: 8px;
+	margin-top: 10px;
+	color: #10314a;
+	font-size: 2rem;
+	transition: color 0.5s ease;
 }
 
-@media only screen and (max-width:600px) {
-	.heading-image h1 {
-		font-size: 1.8rem;
-	}
+.header-social i:hover {
+	color: #fff;
 }
 
-@media only screen and (max-width:400px) {
-	.heading-image img {
-		height: 200px;
-		width: 200px;
-	}
-	.heading-text p {
-		margin-top: 8px;
-		font-size: 1.1em;
-	}
-}
-
-@media only screen and (max-width:300px) {
-	.heading-text p {
-		font-size: 1em;
-	}
-	.heading-image img {
-		height: 150px;
-		width: 150px;
-	}
+.header-icon {
+	font-size: 2em;
 }
