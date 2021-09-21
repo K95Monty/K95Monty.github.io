@@ -16,9 +16,20 @@ main #about-content {
     padding: 10px 30px;
 }
 
+.about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-card i {
     font-size: 1.5em;
     padding-bottom: 5px;
+}
+
+.about-card li {
+    text-align: left;
 }
 
 .about-card img {

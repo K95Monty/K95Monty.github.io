@@ -35,9 +35,6 @@ a {
 }
 
 /* HTML5 display-role reset for older browsers */
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
