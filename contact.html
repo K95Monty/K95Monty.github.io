@@ -27,7 +27,7 @@
 			<a href="./index.html"><i class="fas fa-home"></i> Home</a>
 			<a href="./about.html"><i class="fas fa-user"></i> About</a>
 			<a href="./projects.html"><i class="fas fa-folder-open"></i> Projects</a>
-			<a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a>
+			<a href="./contact.html" class="nav-active"><i class="fas fa-envelope"></i> Contact</a>
 		</div>
 		<div class="navbar-links mobile">
 			<span id="menuHamburger" onclick="openMenu()">
@@ -37,7 +37,7 @@
 				<a href="./index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
 				<a href="./about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
 				<a href="./projects.html" onclick="closeMenu()"><i class="fas fa-folder-open"></i> Projects</a>
-				<a href="./contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+				<a href="./contact.html" onclick="closeMenu()" class="nav-active"><i class="fas fa-envelope"></i> Contact</a>
 				<span id="menuX" onclick="closeMenu()">
 					<i class="far fa-window-close"></i>
 				</span>
@@ -48,7 +48,7 @@
         <section class="header-contact-content">
             <h1>Contact</h1>
             <i class="fas fa-envelope header-icon"></i>
-            <hr>
+            <hr>  
             <p>Interested to know more about me?</p>
             <p>get in touch, I'd love to chat</p>
             <aside class="header-social">
@@ -68,10 +68,9 @@
         </section>
     </header>
     <main id="contact-main">
-        <form action="https://formspree.io/f/xpzkbyjw"
-        method="POST">
+        <form action="https://formspree.io/f/xpzkbyjw" target="_blank" method="POST">
             <label for="name" id="forName">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Kathy Chapman" required />
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
             <br>
             <label for="email" id="forEmail">Email:</label>
             <input type="email" id="email" name="email" placeholder="email@example.com" required />

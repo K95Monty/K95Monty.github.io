@@ -1,22 +1,19 @@
 form {
-    display: grid;
-    grid-template-columns: 100px, repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
     width: 75%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 form label {
     font-size: 1.3em;
     font-weight: bold;
     font-family: 'Archivo Black', sans-serif;
-    grid-column: 1 / span 1;
     margin-top: 10px;
-    justify-self: end;
+
 }
 
 form input, form textarea{
-    grid-column: 2 / span 2;
     background-color: #fff;
     color: #ff5a6a;
     border: 3px solid #10314a;
@@ -33,23 +30,6 @@ form input:focus, form textarea:active {
                 -4px 6px 4px rgba(16, 49, 74, 0.5);
 }
 
-#name, #forName {
-    grid-row: 1;
-}
-
-#email, #forEmail {
-    grid-row: 2;
-}
-
-#forMessage {
-    grid-row: 3;
-}
-
 #message {
-    grid-row: 3 / span 4;
-}
-
-form button {
-    grid-row: 8;
-    grid-column: 2;
+    height: 300px;
 }

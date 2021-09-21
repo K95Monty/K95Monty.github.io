@@ -8,24 +8,24 @@
         align-items: center;
         text-align: center;
     }
-
     #heading-home-text span {
         text-align: center;
         margin: 0 auto;
         font-size: 1.5em;
         width: 200px;
     }
-
     #heading-home-text h1 {
         font-size: 2em;
     }
-
     .header-btn {
         margin: 0 auto;
     }
 }
 
 @media only screen and (max-width:900px) {
+    header, .header-page, .header-contact {
+        padding: 80px 10px 20px 10px !important;
+    }
     .heading-home-content {
         flex: none;
         width: 100%;
@@ -43,7 +43,7 @@
         font-size: 1em;
     }
     main {
-        width: 80%;
+        width: 80% !important;
         margin: 0 auto;
     }
     main h2 {
@@ -55,6 +55,9 @@
 }
 
 @media only screen and (max-width:600px) {
+    .header-box {
+        width: 90%;
+    }
     .header-contact-content {
         padding: 0 20px;
     }
@@ -74,28 +77,24 @@
         width: 100%;
         margin: 0 auto;
     }
-    form {
-        padding: 20px;
-        margin: 0 auto;
-        width: 80%;
-    }
     form label {
         text-align: center;
     }
-    form, form input, form label, form textarea {
+    form {
         font-size: 1em;
-        display: block;
-        margin: 0 auto;
     }
     form textarea {
         height: 250px;
     }
+    .project .card {
+        width: 90%;
+    }
+    .project p {
+        padding: 5px;
+    }
 }
 
-@media only screen and (max-width:400px) {
-    header, .header-page, .header-contact {
-        padding: 80px 10px 20px 10px !important;
-    }
+@media only screen and (max-width:400px) {    
     .header-about #profile-pic {
         width: 250px;
         height: 250px;
