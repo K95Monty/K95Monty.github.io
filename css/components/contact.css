@@ -6,3 +6,8 @@
 .header-contact p {
 	font-size: 1.5em;
 }
+
+#contact-main h2 {
+    text-align: center;
+    display: none;
+}

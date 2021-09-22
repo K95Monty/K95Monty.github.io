@@ -25,7 +25,7 @@ form input, form textarea{
     font-family: 'Roboto', sans-serif;
 }
 
-form input:focus, form textarea:active {
+form input:focus, form textarea:focus {
     box-shadow: 4px 6px 4px rgba(16, 49, 74, 0.5),
                 -4px 6px 4px rgba(16, 49, 74, 0.5);
 }

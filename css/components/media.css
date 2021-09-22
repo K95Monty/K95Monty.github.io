@@ -67,9 +67,6 @@
         margin: 0 auto;
         padding-top: 40px;
     }
-    #heading-home-text span {
-        width: 100%;
-    }
     #heading-home-text h1, h1 {
         font-size: 1.8em;
     }
@@ -91,6 +88,9 @@
     }
     .project p {
         padding: 5px;
+    }
+    #contact-main h2 {
+        font-size: 1.5em;
     }
 }
 
@@ -124,5 +124,8 @@
     }
     .about-card img {
         width: 200px;
+    }
+    #contact-main h2 {
+        font-size: 1.2em;
     }
 }

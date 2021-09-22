@@ -30,6 +30,7 @@ main #about-content {
 
 .about-card li {
     text-align: left;
+    margin-bottom: 2px;
 }
 
 .about-card img {

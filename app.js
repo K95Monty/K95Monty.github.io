@@ -53,5 +53,8 @@ document.getElementById("time").innerHTML = getYear();
 		document.getElementById('show3').style.display = 'block';
 	}
 	
-
-
+//Form OnSubmit
+	function onSubmit() {
+		document.getElementById('contactForm').style.display = 'none';
+		document.getElementById('contactMsg').style.display = 'block';
+	}
