@@ -20,3 +20,7 @@ main #home-content {
     color: #fff;
     transition: 0.3s ease all;
 }
+
+.home-card img {
+    width: 40%;
+} 
