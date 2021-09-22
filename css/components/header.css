@@ -40,7 +40,7 @@ header { /*all header */
 	color: #10314a;
 	width: 60%;
 	animation: typing 2s steps(22), blink .3s step-end infinite alternate;
-	animation-delay: 4s;
+	animation-delay: 0.2s;
 	/* animation-iteration-count: infinite; */
 	white-space: nowrap;
 	overflow: hidden;
