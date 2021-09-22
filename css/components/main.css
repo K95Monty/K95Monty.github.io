@@ -21,7 +21,7 @@ main h2{
     padding: 20px;
 }
 
-.main-btn a, form button {
+.main-btn a, form button, #about-below {
     color: #10314a;
     border: 4px solid #10314a;
     box-shadow: 4px 6px 4px rgba(16, 49, 74, 0.5),
@@ -37,13 +37,13 @@ main h2{
     margin: 0 auto;
 }
 
-.main-btn a:hover, form button:hover {
+.main-btn a:hover, form button:hover, #about-below:hover {
     background-color: #628bbd;
     color: #ffffff;
     transition: 0.5s ease;
 }
 
-.main-btn a:hover, form button:active {
+.main-btn a:hover, form button:active, #about-below:hover {
     transform: scale(0.98);
     box-shadow: 4px 2px 4px rgba(16, 49, 74, 0.5),
                 -4px 2px 4px rgba(16, 49, 74, 0.5);

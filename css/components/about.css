@@ -7,6 +7,12 @@ main #about-content {
     row-gap: 20px;
 }
 
+#about-below {
+    font-size: 1em !important;
+    padding: 10px !important;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 #about-main .progress {
     padding: 10px 0;
 }
