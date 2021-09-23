@@ -74,6 +74,14 @@
     border-radius: 5px;
 }
 
+.project button:hover {
+	background-color: #628bbd;
+    color: #ffffff;
+    transition: 0.3s ease;
+	box-shadow: 4px 2px 4px rgba(16, 49, 74, 0.5),
+                -4px 2px 4px rgba(16, 49, 74, 0.5);
+}
+
 .project button:active {
 	transform: scale(0.98);
     box-shadow: 4px 2px 4px rgba(16, 49, 74, 0.5),
